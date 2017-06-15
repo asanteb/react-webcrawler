@@ -1,17 +1,81 @@
 {
-  "name": "node-web-crawler",
+  "name": "react-webcrawler",
   "version": "1.0.0",
   "description": "Quick and simple web crawler for NodeJS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack-production.config.js --progress --colors",
+    "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantebuil/react-webcrawler.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "react",
+    "reactjs",
+    "website",
+    "webapp",
+    "crawler"
+  ],
   "author": "Asante Buil",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asantebuil/react-webcrawler/issues"
+  },
+  "homepage": "https://github.com/asantebuil/react-webcrawler#readme",
+  "devDependencies": {
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
   "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-jason": "^3.1.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
     "cheerio": "^1.0.0-rc.1",
-    "memory-cache": "^0.1.6",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.0.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-mocha": "^4.10.1",
+    "eslint-plugin-react": "^7.0.1",
+    "express": "^4.15.3",
+    "express-subdomain": "^1.0.5",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "jason": "^0.3.1",
+    "json-loader": "^0.5.4",
+    "jsx-loader": "^0.13.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "less-plugin-autoprefix": "^1.5.1",
+    "mobx": "^3.1.15",
+    "mobx-react": "^4.2.1",
+    "postcss-loader": "^2.0.5",
+    "react": "^15.5.4",
+    "react-custom-scrollbars": "^4.1.2",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "next",
+    "react-particles-js": "^1.5.0",
+    "react-prop-types": "^0.4.0",
+    "react-router-dom": "^4.1.1",
+    "react-tap-event-plugin": "^2.0.1",
     "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "request-promise": "^4.2.1",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.5",
+    "serve-favicon": "^2.4.3",
+    "transfer-webpack-plugin": "^0.1.4"
   }
 }
