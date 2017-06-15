@@ -1,0 +1,17 @@
+{
+  "name": "node-web-crawler",
+  "version": "1.0.0",
+  "description": "Quick and simple web crawler for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asante Buil",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "memory-cache": "^0.1.6",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
